@@ -1,0 +1,82 @@
+.quiz {
+	position: relative;
+	padding: 2rem 2rem calc(2rem + 70px);
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
+	width: 600px;
+	max-width: 95vw;
+	overflow: hidden;
+}
+
+.title{
+	font-size: 1.5rem;
+	padding: 1rem 0;
+	text-align: center;
+	margin: 0;
+}
+
+.summary {
+	text-align: center;
+	margin: 0.5rem 0 1rem;
+	font-size: 1.2rem;
+	font-weight: 400;
+}
+
+.result {
+	text-align: center;
+	font-size: 1.2rem;
+	font-weight: 700;
+}
+
+.quiz-list {
+	list-style-type: none;
+	padding: 0;
+}
+
+.quiz-list li {
+	font-size: 1.2rem;
+}
+
+.quiz-list label {
+	cursor: pointer;
+	width: 100%;
+    display: block;
+	padding: 1rem 0.5rem;
+}
+
+.quiz-list label:hover {
+	background-color: seashell;
+}
+
+.quiz-list label.correct {
+	color: rgb(36, 144, 77);
+	font-weight: bold;
+}
+
+.quiz-list label.disabled {
+	cursor: no-drop;
+}
+
+.quiz-list label.disabled:hover {
+	cursor: no-drop;
+	background-color: transparent;
+}
+
+.quiz-list label.wrong {
+	color: rgb(218, 59, 59);
+	font-weight: bold;
+}
+
+.quiz-list input[type="radio"] {
+	margin-right: 10px;
+}
+
+.quiz-submit {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 70px;
+	line-height: 70px;
+}
